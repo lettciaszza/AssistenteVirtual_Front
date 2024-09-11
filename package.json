@@ -1,0 +1,22 @@
+{
+  "name": "assistente",
+  "version": "32.0.2",
+  "description": "Assistente virtual com integração via Electron.",
+  "main": "main.js",
+  "author": "lettciaszza",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec electron .",
+    "build": "electron-packager . assistente --platform=win32 --arch=x64"
+  },
+  "devDependencies": {
+    "electron": "^32.0.2",
+    "electron-packager": "^17.1.2",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "assistente": "file:",
+    "electron-rebuild": "^3.2.9",
+    "node-fetch": "^3.3.2"
+  }
+}
